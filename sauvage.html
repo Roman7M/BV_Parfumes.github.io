@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dior Sauvage Elixir</title>
+  <link rel="stylesheet" href="styleP.css">
+  <a href="cart.html" class="cart-link">🛒 Кошик</a>
+
+<style>
+  .cart-link {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #EBFFD8;
+    color: black;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 3px 3px 4px black;
+    transition: 0.3s;
+    z-index: 1000; 
+  }
+  .cart-link:hover {
+    filter: brightness(1.1);
+    font-size: 18px;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+  <div class="product-container">
+    <div class="product-info">
+      <h1>Dior Sauvage Elixir</h1>
+      <p>
+        60ml<br>
+        Тип аромату: деревинні, пряні<br>
+        Початкова нота: Грейпфрут, Кардамон, Кориця, Мускатний горіх<br>
+        Нота серця: Ваніль, Кумарин, Лаванда<br>
+      </p>
+      <div class="price">5000₴</div>
+      <button class="add-to-cart"
+        data-id="8"
+        data-name="Dior Sauvage Elixir"
+        data-price="5000"
+        data-img="pImages/Sauvage_Elixir.jpeg">
+        Додати в кошик
+      </button>
+    </div>
+
+    <div class="product-image">
+      <img src="pImages/Sauvage_Elixir.jpeg" alt="Dior Sauvage Elixir">
+    </div>
+  </div>
+<script src="cart.js"></script>
+</body>
+</html>

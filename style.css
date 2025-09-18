@@ -1,0 +1,107 @@
+.gloria-hallelujah-regular {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+    body {
+      margin: 0;
+      font-family: "Gloria Hallelujah", cursive;
+      background-color: #A4CCD9;
+      color: black;
+      text-align: center;
+      scroll-behavior: smooth;
+    }
+    p {
+  font-size: 20px;
+}
+    header {
+      background-color: #8DBCC7;
+      padding: 20px;
+    }
+
+    header img {
+      width: 60px;
+      vertical-align: middle;
+    }
+
+    header h1 {
+      display: inline-block;
+      margin: 0 15px;
+      font-size: 28px;
+      vertical-align: middle;
+      box-shadow: 2px 3px 2px darkslategray;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav .btn {
+      background-color: #EBFFD8;
+      display: inline-block;
+      text-decoration: none;
+      color: black;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 3px 3px 4px black;
+    }
+
+    nav .btn:hover {
+      filter: brightness(1.1);
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    main img {
+      width: 150px;
+      margin: 20px 0;
+    }
+
+    .main-text {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .btn {
+      background-color: #EBFFD8;
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      color: black;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 3px 3px 4px black;
+    }
+
+    .btn:hover {
+      filter: brightness(1.1);
+      font-size: 18px;
+      box-shadow: 3px 3px 4px black;
+      transition: 0.3s;
+    }
+
+    footer {
+      background-color: #C4E1E6;
+      color: darkslategray;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 8px 0;
+      font-size: 15px;
+
+    }
+  

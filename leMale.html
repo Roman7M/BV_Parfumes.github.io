@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jean Paul Gaultier Le Beau Le Parfum</title>
+  <link rel="stylesheet" href="styleP.css">
+  <a href="cart.html" class="cart-link">🛒 Кошик</a>
+
+<style>
+  .cart-link {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #EBFFD8;
+    color: black;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 3px 3px 4px black;
+    transition: 0.3s;
+    z-index: 1000; 
+  }
+  .cart-link:hover {
+    filter: brightness(1.1);
+    font-size: 18px;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+  <div class="product-container">
+    <div class="product-info">
+      <h1>Jean Paul Gaultier Le Male Le Parfum</h1>
+      <p>
+        200ml<br>
+        Тип аромату: східні<br>
+        Початкова нота: Кардамон<br>
+        Нота серця: Ірис, Лаванда<br>
+        Кінцева нота: Деревинні ноти, Східні ноти<br>
+      </p>
+      <div class="price">6000₴</div>
+      <button class="add-to-cart"
+        data-id="6"
+        data-name="Jean Paul Gaultier Le Male Le Parfum"
+        data-price="6000"
+        data-img="pImages/JPG_Le_Male_Le_Parfum.jpeg">
+        Додати в кошик
+      </button>
+    </div>
+    <div class="product-image">
+      <img src="pImages/JPG_Le_Male_Le_Parfum.jpeg" alt="Jean Paul Gaultier Le Male Le Parfum">
+    </div>
+  </div>
+<script src="cart.js"></script>
+</body>
+</html>

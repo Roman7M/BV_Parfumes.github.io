@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ваш кошик</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+  <h1>Ваш кошик</h1>
+  <div id="cart-items"></div>
+  <p><strong>Загальна сума:</strong> <span id="cart-total">0</span> ₴</p>
+
+  <h2>Оформити замовлення</h2>
+  <form id="order-form">
+    <input type="text" id="firstName" placeholder="Ім'я" required><br><br>
+    <input type="text" id="lastName" placeholder="Прізвище" required><br><br>
+    <input type="tel" id="phone" placeholder="Номер телефону" required><br><br>
+    <button type="submit" class="btn">Оформити замовлення</button>
+  </form>
+
+  <script>
+  
+    let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+    let container = document.getElementById('cart-items');
+    let total = 0;
+
+    if (cartItems.length === 0) {
+      container.innerHTML = "<p>Кошик порожній 😔</p>";
+    } else {
+      cartItems.forEach((item, index) => {
+        container.innerHTML += `
+          <div class="cart-item">
+            <img src="${item.img}" alt="${item.name}" width="70">
+            <span>${item.name}</span>
+            <span>${item.price}₴</span>
+            <button onclick="removeItem(${index})">❌</button>
+          </div>
+        `;
+        total += item.price;
+      });
+    }
+
+    document.getElementById('cart-total').innerText = total;
+
+    function removeItem(index) {
+      cartItems.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cartItems));
+      location.reload();
+    }
+
+    document.getElementById('order-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      let name = document.getElementById('firstName').value;
+      let surname = document.getElementById('lastName').value;
+      let phone = document.getElementById('phone').value;
+
+      if (cartItems.length === 0) {
+        alert("Ваш кошик порожній!");
+        return;
+      }
+
+      alert("Ваше замовлення прийнято!\nОчікуйте дзвінок менеджера для уточнення деталей.");
+
+      localStorage.removeItem('cart');
+      location.reload();
+    });
+  </script>
+
+</body>
+</html>
+

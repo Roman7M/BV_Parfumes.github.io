@@ -1,0 +1,53 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #a6c9d6;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: "Gloria Hallelujah";
+}
+
+.perfume-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.perfume-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfume-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.perfume-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.perfume-card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.perfume-card.empty {
+  background: transparent;
+  box-shadow: none;
+}

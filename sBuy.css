@@ -1,0 +1,68 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #A4CCD9;
+  text-align: center;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Gloria Hallelujah";
+}
+
+.seasons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  grid-gap: 40px;
+  justify-content: center;
+}
+
+.season {
+  width: 280px;
+  height: 280px;
+  border: 2px solid #000;
+  box-shadow: 5px 9px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 33px;
+  background-size: cover;
+  background-position: center;
+}
+.season:hover {
+    filter: brightness(0.6);
+    transform: scale(0.95);
+}
+
+.season:hover {
+    filter: brightness(1.2);
+    transform: scale(1.08);
+    z-index: 2;
+    order: 2px solid #ccc;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.winter {
+  background-image: url("images/winter.jpg");
+}
+
+.spring {
+  background-image: url("images/spring.jpg");
+}
+
+.summer {
+  background-image: url("images/summer.jpg");
+}
+
+.autumn {
+  background-image: url("images/autumn.jpg");
+}
+
+.mix {
+  background-image: url("images/mix.png");
+  grid-column: 2;
+}
+

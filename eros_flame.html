@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Versace Eros Flame</title>
+  <link rel="stylesheet" href="styleP.css">
+  <a href="cart.html" class="cart-link">🛒 Кошик</a>
+
+<style>
+  .cart-link {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #EBFFD8;
+    color: black;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 3px 3px 4px black;
+    transition: 0.3s;
+    z-index: 1000; 
+  }
+  .cart-link:hover {
+    filter: brightness(1.1);
+    font-size: 18px;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+  <div class="product-container">
+    <div class="product-info">
+      <h1>Versace Eros Flame</h1>
+      <p>
+        50ml<br>
+        Тип аромату: деревинні, пряні<br>
+        Початкова нота: Лимон, Мандарин, Розмарин, Чорний перець<br>
+        Нота серця: Герань, Перець, Троянда<br>
+        Кінцева нота: Боби тонка, Ваніль, Дубовий мох, Пачулі, Сандал, Техаський кедр<br>
+
+      </p>
+      <div class="price">2000₴</div>
+      <button class="add-to-cart"
+        data-id="2"
+        data-name="Versace Eros Flame"
+        data-price="2000"
+        data-img="pImages/Eros_Flame.jpeg">
+        Додати в кошик
+      </button>
+    </div>
+
+    <div class="product-image">
+      <img src="pImages/Eros_Flame.jpeg" alt="Versace Eros Flame">
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
